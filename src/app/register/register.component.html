@@ -1,0 +1,40 @@
+<div id="id01" class="modal">
+  
+    <div class="modal-content animate">
+  
+      <div class="container">
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)] = "profile.name" placeholder="Name">
+
+          </mat-form-field>
+      
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)] = "profile.email" type= "email" placeholder="email">
+
+          </mat-form-field>
+        
+  
+          
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput [(ngModel)] = "profile.password" type="password" placeholder="password">
+
+          </mat-form-field>
+        
+
+       
+
+          
+        <button type ="button" (click)="register();">Register</button>
+       
+      </div>
+  
+    </div>
+  </div>
+
+
+
+

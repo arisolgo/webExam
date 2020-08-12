@@ -1,0 +1,26 @@
+
+
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="../../assets/avatar.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Email</b></label>
+        <input type="text" [(ngModel)] = "profile.email" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" [(ngModel)] = "profile.password" name="psw" required>
+          
+        <button (click)="login();" type="submit">Login</button>
+       
+      </div>
+  
+    </form>
+  </div>
+
+
+
+

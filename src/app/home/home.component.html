@@ -1,0 +1,45 @@
+
+
+
+<table class="table">
+    <thead>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Accion</th>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let contact of users">
+        <td>{{contact.name}}</td>
+        <td>{{contact.lastName}}</td>
+        <td>{{contact.email}}</td>
+        <td>{{contact.telNumber}}</td>
+        <td>
+            <button
+                    class="action-button"
+                    mat-icon-button
+                    [matMenuTriggerFor]="actionsMenu"
+                  >
+                    <mat-icon>menu</mat-icon>
+                  </button>
+                 
+
+                  <mat-menu #actionsMenu="matMenu">
+
+                      <button mat-menu-item>
+                          <mat-icon>edit</mat-icon>
+                          <span>Edit</span>
+                        </button>
+
+                    <button  mat-menu-item >
+                      <mat-icon>delete</mat-icon>
+                      <span>Delete</span>
+                    </button>
+                  </mat-menu>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>

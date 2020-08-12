@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "webexam-bf71f": {
+      "hosting": {
+        "webApp": [
+          "webexam-bf71f"
+        ]
+      }
+    }
+  }
+}

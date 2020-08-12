@@ -1,0 +1,27 @@
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="../../assets/avatar.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Name</b></label>
+        <input type="text" [(ngModel)] = "profile.name" name="uname" required>
+
+        <label for="psw"><b>Email</b></label>
+        <input type="text" [(ngModel)] = "profile.lastName" name="psw" required>
+
+        <label for="psw"><b>Telephone</b></label>
+        <input type="text" [(ngModel)] = "profile.telNumber" name="psw" required>
+
+  
+        <label for="psw"><b>Email</b></label>
+        <input type="text" [(ngModel)] = "profile.email" name="psw" required>
+          
+        <button (click)="addContact();">Add Contact</button>
+       
+      </div>
+  
+    </form>
+  </div>

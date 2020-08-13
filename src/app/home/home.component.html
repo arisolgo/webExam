@@ -1,5 +1,10 @@
 
 
+ <div class="example-button-container">
+    <button (click)="addContact();" mat-fab color="primary" aria-label="Example icon button with a bookmark icon">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
 
 <table class="table">
     <thead>
@@ -28,12 +33,12 @@
 
                   <mat-menu #actionsMenu="matMenu">
 
-                      <button mat-menu-item>
+                      <button (click) = "goToDetail(contact.id)"mat-menu-item>
                           <mat-icon>edit</mat-icon>
                           <span>Edit</span>
                         </button>
 
-                    <button  mat-menu-item >
+                    <button (click)="deleteContact(contact.id)" mat-menu-item >
                       <mat-icon>delete</mat-icon>
                       <span>Delete</span>
                     </button>

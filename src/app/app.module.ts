@@ -15,6 +15,8 @@ import { EmailComponent } from './email/email.component';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { AddContactComponent } from './add-contact/add-contact.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { AddContactComponent } from './add-contact/add-contact.component';
     MatIconModule,
     HttpClientModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

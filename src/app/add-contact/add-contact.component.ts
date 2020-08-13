@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AddContactComponent implements OnInit {
 
-  profile ={name: '', email:''};
+  profile ={name: '', lastName: '', email:'', telNumber:''};
   constructor(private httpClient:HttpClient, private router:Router) { }
 
   ngOnInit() {
@@ -26,6 +26,10 @@ export class AddContactComponent implements OnInit {
 
     })
       
+  }
+
+  goBack(){
+    this.router.navigateByUrl('/home');
   }
 
 
